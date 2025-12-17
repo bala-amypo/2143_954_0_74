@@ -1,6 +1,6 @@
-StudentServiceImpl.java
+// StudentServiceImpl.java
 
-package com.example.demo.service.Impl;
+package com.example.demo.Service.Impl;
 
 import java.util.*;
 import org.springframework.stereotype.Service;
