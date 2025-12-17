@@ -22,6 +22,8 @@ public class Studct1{
         return ser.getById(id);
     }
     @PutMapping("/update/{id}")
-    public Studentity updateStudent( @PathVAriable int id,@RequestBody Studentity )
+    public Studentity updateStudent( @PathVAriable int id,@RequestBody Studentity st){
+        return ser.update(id,st);
+    }
 
 }
