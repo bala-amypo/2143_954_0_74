@@ -18,6 +18,10 @@ public class Studct1{
         return ser.saveData(st);
     }
     @GetMapping("/getail")
-    
+    public Studentity getStudentById(@PathVariable int id){
+        return ser.getById(id);
+    }
+    @PutMapping("/update/{id}")
+    public Studentity updateStudent( @PathVAriable int id,@RequestBody Studentity )
 
 }
