@@ -1,13 +1,13 @@
-package com.example.demo.entity;
+package com.example.demo.Entity;
 
-public class Studentity {
+public class StudentEntity {
 
     private int id;
     private String name;
 
-    public Studentity(){
+    public StudentEntity(){
     }
-    public Studentity(int id,String name) {
+    public StudentEntity(int id,String name) {
         this.id = id;
         this.name = name;
     }

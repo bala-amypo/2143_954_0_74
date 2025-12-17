@@ -5,24 +5,24 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entity.Studentity;
-import com.example.demo.service.Studservice;
+import com.example.demo.Entity.StudentEntity;
+import com.example.demo.Service.StudentService;
 
 @RestController
 @RequestMapping("/student")
 public class Studct1{
     @Autowired 
-    private Studservice ser;
+    private StudentService ser;
     @PostMapping("/add")
-    public Studentity addStudent(@RequestBody Studentity st){
+    public StudentEntity addStudent(@RequestBody StudentEntity st){
         return ser.saveData(st);
     }
     @GetMapping("/getail")
-    public Studentity getStudentById(@PathVariable int id){
+    public StudentEntity getStudentById(@PathVariable int id){
         return ser.getById(id);
     }
     @PutMapping("/update/{id}")
-    public Studentity updateStudent( @PathVAriable int id,@RequestBody Studentity st){
+    public StudentEntity updateStudent( @PathVAriable int id,@RequestBody StudentEntity st){
         return ser.update(id,st);
     }
 
