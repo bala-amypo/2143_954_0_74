@@ -9,4 +9,7 @@ import com.example.demo.entity.Studentity;
 import com.example.demo.service.Studservice;
 
 @RestController
-@
+@RequestMapping("/student")
+public class Studct1{
+    
+}
